@@ -1,0 +1,421 @@
+pho<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cloud With Mabel</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#232F3E;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#FF9900;
+}
+
+/* Hero Section */
+
+.hero{
+    background:
+    linear-gradient(rgba(35,47,62,0.75), rgba(35,47,62,0.75)),
+    url('cloud-bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    text-align:center;
+    padding:140px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#FF9900;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background:#e68a00;
+}
+
+/* Sections */
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#232F3E;
+}
+
+/* Profile */
+
+.profile-container{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #FF9900;
+}
+
+/* Cards */
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+/* Social Links */
+
+.socials{
+    text-align:center;
+}
+
+.socials a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#FF9900;
+    font-weight:bold;
+}
+
+.socials a:hover{
+    text-decoration:underline;
+}
+
+/* Stats Section */
+
+.stats{
+    text-align:center;
+}
+
+/* Footer */
+
+footer{
+    background:#232F3E;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero{
+        padding:100px 20px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<h2>☁️ Cloud With Mabel</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#journey">Journey</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Building My Cloud Career One Project at a Time</h1>
+
+<p>
+AWS Certified Cloud Practitioner | Aspiring Cloud Engineer |
+Sharing lessons, projects and insights from my cloud journey.
+</p>
+
+<a href="https://www.linkedin.com/in/mabelomolaja/" class="btn">
+Connect on LinkedIn
+</a>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="profile-container">
+<img src="profile.jpg" alt="Mabel" class="profile-img">
+</div>
+
+<p style="text-align:center; max-width:800px; margin:auto;">
+Hi, I'm Mabel.
+
+My professional background is in digital marketing,
+customer engagement and business growth across multiple industries.
+
+I am expanding into cloud computing with AWS,
+documenting every step of the journey through Cloud With Mabel.
+
+My goal is to grow into a cloud engineering role while helping
+other beginners navigate the same path.
+</p>
+
+</section>
+
+<section id="journey">
+
+<h2>My Cloud Journey</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>2026</h3>
+<p>Passed AWS Certified Cloud Practitioner.</p>
+</div>
+
+<div class="card">
+<h3>Current Focus</h3>
+<p>Preparing for AWS Solutions Architect Associate.</p>
+</div>
+
+<div class="card">
+<h3>Learning</h3>
+<p>IAM, S3, EC2, VPC, CloudFront and Route 53.</p>
+</div>
+
+<div class="card">
+<h3>Goal</h3>
+<p>Build real-world projects and transition into cloud engineering.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Featured Projects</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<img src="aws-project.jpg" alt="AWS Project">
+
+<h3>Static Website Hosting</h3>
+
+<p>
+Built and hosted a personal website using Amazon S3 and static website hosting and Amazon CloudFront for secure, high-performance content delivery.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="aws-project.jpg" alt="AWS Project">
+
+<h3>IAM User Management</h3>
+
+<p>
+Created IAM users, groups and permissions following AWS security best practices.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="aws-project.jpg" alt="AWS Project">
+
+<h3>Cloud Portfolio</h3>
+
+<p>
+Building a portfolio of AWS projects while documenting lessons learned.
+</p>
+
+</div>
+
+<div class="card">
+
+
+<img src="aws-project.jpg" alt="AWS Project">
+
+<h3>Coming Soon</h3>
+
+<p>
+Route 53, ACM, CloudFront Enhancements, CI/CD Pipelines, Terraform, EC2, Docker, Lambda, VPC, RDS.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<h2>Cloud Journey Progress</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>1</h3>
+<p>AWS Certification Earned</p>
+</div>
+
+<div class="card">
+<h3>4+</h3>
+<p>Projects Built</p>
+</div>
+
+<div class="card">
+<h3>2026</h3>
+<p>Year of Cloud Growth</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Connect With Me</h2>
+
+<p style="text-align:center;">
+I enjoy connecting with cloud professionals, learners and career changers.
+</p>
+
+<br>
+
+<div class="socials">
+
+<a href="https://www.linkedin.com/in/mabelomolaja/">LinkedIn</a>
+
+<a href="https://github.com/MabelOmolaja">GitHub</a>
+
+<a href="https://mabelomolaja.substack.com">Substack</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Cloud With Mabel | Building in Public ☁️
+</p>
+
+</footer>
+
+</body>
+</html>
